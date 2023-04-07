@@ -55,9 +55,9 @@ font-size: 1em;
     background-color:rgba(61, 2, 2, 0.623);
     padding: 5px;
 }
-.contenedor-texto{
-   
-   
+.container-imagenes-fender{
+    margin: 20px;
+
 }
 h3{
     padding: 5px;
@@ -118,23 +118,18 @@ h3{
 .copy-right{
     font-size: 0.7em;
 }
-
-.imagen-kurt{
-    width: 100%;
+.img-container{
+    text-align: center;
 }
 
-.imagen-jimi{
-    width: 100%;
+
+.imagen{
+    width: 75%;
 }
 
-.imagen-yngwie{
-    width: 100%;
+.container-imagenes-gibson{
+    margin: 20px;
 }
-
-.container-imagenes-fender{
-  margin: 10px;
-}
-
 
 
 
