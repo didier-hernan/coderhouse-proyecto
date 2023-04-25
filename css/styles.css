@@ -145,4 +145,91 @@ form .formulario .button:hover {
   background-color: rgb(44, 35, 35);
 }
 
+@media (min-width: 900px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10vh 5vh;
+  }
+  .header .titulo-seccion {
+    text-align: right;
+    margin-right: 20px;
+  }
+  .header .contenedor-nav {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor--texto--index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedor--texto--index .parrafo {
+    display: flex;
+    grid-row: 1/span 1;
+  }
+  .contenedor--texto--index .imagen--index {
+    display: flex;
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(221, 216, 216);
+  }
+  .div--video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contendor--articulo--fender {
+    display: grid;
+    background-color: rgb(221, 216, 216);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .contendor--articulo--fender .parrafo--fender {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .contendor--articulo--fender .img--jimi {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+  }
+  .contendor--articulo--fender .img--cobain {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .contendor--articulo--fender .img--yngwie {
+    display: flex;
+    height: 90%;
+    justify-content: center;
+  }
+  .contendor--articulo--gibson {
+    display: grid;
+    background-color: rgb(221, 216, 216);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(20vh 10vh);
+  }
+  .contendor--articulo--gibson .img--angus {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .contendor--articulo--gibson .parrafo-gibson {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .contendor--articulo--ibanez {
+    display: grid;
+    background-color: rgb(221, 216, 216);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
