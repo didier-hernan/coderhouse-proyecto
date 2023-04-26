@@ -1,0 +1,48 @@
+h1 {
+    color: rgb(238, 213, 130);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+h3 {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    color: rgb(150, 52, 6);
+    background-color: rgba(233, 201, 95, 0.308);
+}
+
+.parrafo {
+    background-color: $color-primario;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.2rem;
+
+}
+
+
+@media (min-width:1200px) {
+    h1 {
+        display: flex;
+        text-align: left;
+        margin-left: 20px;
+    }
+    @media (min-width:1200px) {
+        .parrafo--video {
+            background-color: rgb(187, 180, 180);
+            display: flex;
+            grid-column: 2/4;
+            grid-row: 1/2;
+        }
+     }
+     }

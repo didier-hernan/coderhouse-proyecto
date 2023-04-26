@@ -1,0 +1,49 @@
+
+@media (min-width:800px) {
+.contenedor--texto--index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .parrafo {
+        display: flex;
+        grid-row: 1/span 1;
+    }
+
+    .imagen--index {
+        display: flex;
+        grid-column: 2/span 1;
+        grid-row: 1/span 1;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        background-color: $color-primario;
+
+
+
+
+    }
+} 
+}
+
+@keyframes mover-caja {
+    0% {
+
+        translate: 0 0;
+    }
+
+
+    25% {
+
+        translate: 0px -100px;
+    }
+
+    50% {
+
+        translate: 0px 100px;
+    }
+
+    100% {
+
+        translate: 0 0;
+    }
+}

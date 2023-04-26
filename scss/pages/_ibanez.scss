@@ -1,0 +1,80 @@
+@media (min-width:800px) {
+
+    .contendor--articulo--ibanez {
+        display: grid;
+        background-color:$color-primario ;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img--mick {
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: $color-primario;
+        animation-name: mover-caja-mick;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-delay: 3s;
+        animation-fill-mode: both;
+    }
+    .img--yngwie {
+    display: flex;
+    height: 90%;
+    justify-content: center;
+}
+}
+
+@media (min-width:1200px) {
+.contendor--articulo--ibanez {
+    display: grid;
+    background-color: $color-primario;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .parrafo--ibanez {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .img--mick {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 75%;
+    }
+
+    .img--satriani {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+    }
+
+    .img-ibanez {
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+}
+}
+
+@keyframes mover-caja-mick {
+    0% {
+
+        translate: 0 0;
+    }
+
+
+    25% {
+
+        translate: 0px -50px;
+    }
+
+    50% {
+
+        translate: 0px 50px;
+    }
+
+    100% {
+
+        translate: 0 0;
+    }
+}

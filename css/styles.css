@@ -13,7 +13,53 @@ body {
   position: relative;
 }
 
-/*=========FUENTES============*/
+@media (min-width: 800px) {
+  body {
+    background-color: rgb(221, 216, 216);
+  }
+}
+@keyframes mover-caja {
+  0% {
+    translate: 0 0;
+  }
+  25% {
+    translate: 0px -100px;
+  }
+  50% {
+    translate: 0px 100px;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+@keyframes mover-caja-angus {
+  0% {
+    translate: 0 0;
+  }
+  25% {
+    translate: 0px -100px;
+  }
+  50% {
+    translate: 0px 100px;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+@keyframes mover-caja-mick {
+  0% {
+    translate: 0 0;
+  }
+  25% {
+    translate: 0px -50px;
+  }
+  50% {
+    translate: 0px 50px;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
 h1 {
   color: rgb(238, 213, 130);
   text-align: center;
@@ -45,13 +91,43 @@ h3 {
   font-size: 1.2rem;
 }
 
-/*===============HEADER=======================*/
+@media (min-width: 1200px) {
+  h1 {
+    display: flex;
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .parrafo--video {
+    background-color: rgb(187, 180, 180);
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+}
 header {
   background-color: rgba(0, 0, 0, 0.651);
   color: white;
 }
 
-/*==========================NAVS=========================*/
+@media (min-width: 800px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10vh 5vh;
+  }
+  .header .titulo-seccion {
+    text-align: right;
+    margin-right: 20px;
+  }
+  .header .contenedor-nav {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 nav {
   display: flex;
   align-items: center;
@@ -77,34 +153,6 @@ nav ul a:hover {
   color: black;
 }
 
-/*==================COMPONENTES=============*/
-.caja-bajo-header {
-  background-color: rgba(61, 2, 2, 0.623);
-  padding: 5px;
-}
-
-.caja--sobre--footer {
-  background-color: rgba(61, 2, 2, 0.623);
-  padding: 5px;
-}
-
-/*============IMAGENES====================*/
-.imagen {
-  display: block;
-  margin-left: auto;
-  margin-top: auto;
-  width: 100%;
-  justify-content: center;
-  padding: 10px;
-}
-
-/*==============================VIDEOS=====================*/
-.video {
-  width: 100%;
-  text-align: center;
-}
-
-/*==============================FOOTER======================*/
 footer {
   background-color: rgba(0, 0, 0, 0.651);
   color: white;
@@ -114,7 +162,216 @@ footer {
   font-size: 0.5rem;
 }
 
-/*========FORMULARIO=======*/
+@media (min-width: 800px) {
+  .contendor--articulo--fender {
+    display: grid;
+    background-color: rgb(221, 216, 216);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .contendor--articulo--fender .parrafo--fender {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .contendor--articulo--fender .img--jimi {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+  }
+  .contendor--articulo--fender .img--cobain {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(221, 216, 216);
+    animation-name: mover-caja;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+  }
+}
+@media (min-width: 1200px) {
+  .contendor--articulo--fender {
+    display: grid;
+    background-color: rgb(221, 216, 216);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25vh;
+  }
+  .contendor--articulo--fender .parrafo--fender {
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .contendor--articulo--fender .img--cobain {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .contendor--articulo--fender .img-jimi {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .contendor--articulo--fender .img--yngwie {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+@media (min-width: 800px) {
+  .contendor--articulo--gibson {
+    display: grid;
+    background-color: rgb(221, 216, 216);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(20vh 10vh);
+  }
+  .contendor--articulo--gibson .img--angus {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(221, 216, 216);
+    animation-name: mover-caja-angus;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+  }
+  .contendor--articulo--gibson .parrafo-gibson {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+@media (min-width: 1200px) {
+  .contendor--articulo--gibson {
+    display: grid;
+    background-color: rgb(221, 216, 216);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+  }
+  .contendor--articulo--gibson .parrafo-gibson {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .contendor--articulo--gibson .img--angus {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 75%;
+  }
+}
+@keyframes mover-caja-angus {
+  0% {
+    translate: 0 0;
+  }
+  25% {
+    translate: 0px -100px;
+  }
+  50% {
+    translate: 0px 100px;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+@media (min-width: 800px) {
+  .contendor--articulo--ibanez {
+    display: grid;
+    background-color: rgb(221, 216, 216);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img--mick {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(221, 216, 216);
+    animation-name: mover-caja-mick;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+  }
+  .img--yngwie {
+    display: flex;
+    height: 90%;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .contendor--articulo--ibanez {
+    display: grid;
+    background-color: rgb(221, 216, 216);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .contendor--articulo--ibanez .parrafo--ibanez {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .contendor--articulo--ibanez .img--mick {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 75%;
+  }
+  .contendor--articulo--ibanez .img--satriani {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .contendor--articulo--ibanez .img-ibanez {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+@keyframes mover-caja-mick {
+  0% {
+    translate: 0 0;
+  }
+  25% {
+    translate: 0px -50px;
+  }
+  50% {
+    translate: 0px 50px;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+@media (min-width: 800px) {
+  .contenedor--texto--index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedor--texto--index .parrafo {
+    display: flex;
+    grid-row: 1/span 1;
+  }
+  .contenedor--texto--index .imagen--index {
+    display: flex;
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    background-color: rgb(221, 216, 216);
+  }
+}
+@keyframes mover-caja {
+  0% {
+    translate: 0 0;
+  }
+  25% {
+    translate: 0px -100px;
+  }
+  50% {
+    translate: 0px 100px;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
 form {
   display: block;
   background-color: rgb(211, 209, 207);
@@ -153,181 +410,43 @@ form .formulario .button:hover {
   background-color: rgb(44, 35, 35);
 }
 
-/*======================CAMBIO RESOLUCION 800PX===================*/
+.imagen {
+  display: block;
+  margin-left: auto;
+  margin-top: auto;
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+}
+
+.caja-bajo-header {
+  background-color: rgba(61, 2, 2, 0.623);
+  padding: 5px;
+}
+
+.caja--sobre--footer {
+  background-color: rgba(61, 2, 2, 0.623);
+  padding: 5px;
+}
+
 @media (min-width: 800px) {
-  .header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10vh 5vh;
-  }
-  .header .titulo-seccion {
-    text-align: right;
-    margin-right: 20px;
-  }
-  .header .contenedor-nav {
-    grid-column: span 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .contenedor--texto--index {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .contenedor--texto--index .parrafo {
-    display: flex;
-    grid-row: 1/span 1;
-  }
-  .contenedor--texto--index .imagen--index {
-    display: flex;
-    grid-column: 2/span 1;
-    grid-row: 1/span 1;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    background-color: rgb(221, 216, 216);
-  }
   .div--video {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .contendor--articulo--fender {
-    display: grid;
-    background-color: rgb(221, 216, 216);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .contendor--articulo--fender .parrafo--fender {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .contendor--articulo--fender .img--jimi {
-    display: flex;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    width: 100%;
-  }
-  .contendor--articulo--fender .img--cobain {
-    display: flex;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  .contendor--articulo--fender .img--yngwie {
-    display: flex;
-    height: 90%;
-    justify-content: center;
-  }
-  .contendor--articulo--gibson {
-    display: grid;
-    background-color: rgb(221, 216, 216);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(20vh 10vh);
-  }
-  .contendor--articulo--gibson .img--angus {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .contendor--articulo--gibson .parrafo-gibson {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .contendor--articulo--ibanez {
-    display: grid;
-    background-color: rgb(221, 216, 216);
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
-/*===================CAMBIO RESOLUCION 1200px===================*/
 @media (min-width: 1200px) {
-  h1 {
-    display: flex;
-    text-align: left;
-    margin-left: 20px;
-  }
   .div--video {
     background-color: rgb(187, 180, 180);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 20vh 40vh;
-  }
-  .div--video .parrafo--video {
-    background-color: rgb(187, 180, 180);
-    display: flex;
-    grid-column: 2/4;
-    grid-row: 1/2;
+    grid-template-rows: 25vh 40vh;
   }
   .div--video .video {
     display: flex;
     grid-column: 2/4;
     grid-row: 2/3;
     margin-top: 10px;
-  }
-  /*==============PAGINA FENDER==================*/
-  .contendor--articulo--fender {
-    display: grid;
-    background-color: rgb(221, 216, 216);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 25vh;
-  }
-  .contendor--articulo--fender .parrafo--fender {
-    display: flex;
-    grid-column: 1/4;
-    grid-row: 1/2;
-  }
-  .contendor--articulo--fender .img--cobain {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .contendor--articulo--fender .img-jimi {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .contendor--articulo--fender .img--yngwie {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-  /*=========================PAGINA GIBSON=======================*/
-  .contendor--articulo--gibson {
-    display: grid;
-    background-color: rgb(221, 216, 216);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 35vh 40vh;
-  }
-  .contendor--articulo--gibson .parrafo-gibson {
-    grid-column: 1/4;
-    grid-row: 1/2;
-  }
-  .contendor--articulo--gibson .img--angus {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    width: 75%;
-  }
-  /*================PAGINA IBANEZ=============*/
-  .contendor--articulo--ibanez {
-    display: grid;
-    background-color: rgb(221, 216, 216);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .contendor--articulo--ibanez .parrafo--ibanez {
-    grid-column: 1/4;
-    grid-row: 1/2;
-  }
-  .contendor--articulo--ibanez .img--mick {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    width: 75%;
-  }
-  .contendor--articulo--ibanez .img--satriani {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .contendor--articulo--ibanez .img-ibanez {
-    grid-column: 1/2;
-    grid-row: 2/3;
   }
 }
 

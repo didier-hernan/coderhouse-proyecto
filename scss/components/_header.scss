@@ -1,0 +1,25 @@
+header {
+    background-color: rgba(0, 0, 0, 0.651);
+    color: white;
+}
+
+@media (min-width:800px) {
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10vh 5vh;
+
+        .titulo-seccion {
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .contenedor-nav {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+     }

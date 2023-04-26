@@ -1,0 +1,72 @@
+
+@media (min-width:800px) {
+
+.contendor--articulo--fender {
+    display: grid;
+    background-color: $color-primario;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .parrafo--fender {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .img--jimi {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+    }
+
+    .img--cobain {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: $color-primario;
+        animation-name: mover-caja;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-delay: 3s;
+        animation-fill-mode: both;
+
+    }
+    
+
+    }
+     }
+
+     @media (min-width:1200px) {
+     
+        .contendor--articulo--fender {
+            display: grid;
+            background-color: $color-primario;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 25vh;
+    
+            .parrafo--fender {
+                display: flex;
+                grid-column: 1/4;
+                grid-row: 1/2;
+            }
+    
+            .img--cobain {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+    
+            .img-jimi {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+    
+            .img--yngwie {
+                grid-column: 3/4;
+                grid-row: 3/4;
+            }
+        }
+ }    
