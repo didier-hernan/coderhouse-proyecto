@@ -61,19 +61,17 @@ body {
   }
 }
 h1 {
-  color: rgb(238, 213, 130);
+  justify-content: center;
+  color: rgb(11, 10, 12);
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(156, 153, 149);
+  margin: 0;
+  padding: 0;
+  font-family: "Acme", sans-serif;
 }
 
 h2 {
-  color: antiquewhite;
-  text-align: center;
-  padding: 10px;
-  font-size: 1.5em;
-}
-
-h3 {
   padding: 5px;
   text-align: center;
   font-size: 1.3em;
@@ -85,20 +83,13 @@ h3 {
   background-color: rgb(221, 216, 216);
   display: flex;
   justify-content: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Acme", sans-serif;
   text-align: justify;
   padding: 10px;
   font-size: 1.2rem;
 }
 
 @media (min-width: 1200px) {
-  h1 {
-    display: flex;
-    text-align: left;
-    margin-left: 20px;
-  }
-}
-@media (min-width: 1200px) and (min-width: 1200px) {
   .parrafo--video {
     background-color: rgb(187, 180, 180);
     display: flex;
@@ -106,53 +97,6 @@ h3 {
     grid-row: 1/2;
   }
 }
-header {
-  background-color: rgba(0, 0, 0, 0.651);
-  color: white;
-}
-
-@media (min-width: 800px) {
-  .header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10vh 5vh;
-  }
-  .header .titulo-seccion {
-    text-align: right;
-    margin-right: 20px;
-  }
-  .header .contenedor-nav {
-    grid-column: span 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-nav ul {
-  border-radius: 10px;
-  background-color: rgb(51, 52, 53);
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  list-style: none;
-  gap: 40px;
-}
-nav ul a {
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  color: white;
-  font-size: 1em;
-}
-nav ul a:hover {
-  color: black;
-}
-
 footer {
   background-color: rgba(0, 0, 0, 0.651);
   color: white;
@@ -410,11 +354,15 @@ form .formulario .button:hover {
   background-color: rgb(44, 35, 35);
 }
 
+.w-50 {
+  height: 50px;
+}
+
 .imagen {
   display: block;
   margin-left: auto;
   margin-top: auto;
-  width: 100%;
+  max-width: 100%;
   justify-content: center;
   padding: 10px;
 }
@@ -422,11 +370,20 @@ form .formulario .button:hover {
 .caja-bajo-header {
   background-color: rgba(61, 2, 2, 0.623);
   padding: 5px;
+  margin: 0;
 }
 
 .caja--sobre--footer {
   background-color: rgba(61, 2, 2, 0.623);
   padding: 5px;
+  margin: 0;
+}
+
+.video {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 800px) {
@@ -447,7 +404,23 @@ form .formulario .button:hover {
     grid-column: 2/4;
     grid-row: 2/3;
     margin-top: 10px;
+    max-width: 100%;
   }
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+header .navbar-toggler {
+  color: rgb(70, 64, 64);
+  background-color: rgb(171, 171, 189);
+  margin: 5px;
+}
+
+.bg-color {
+  background-color: rgba(61, 2, 2, 0.26);
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

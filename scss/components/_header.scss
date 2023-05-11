@@ -1,25 +1,22 @@
-header {
-    background-color: rgba(0, 0, 0, 0.651);
-    color: white;
-}
+header{
+    margin: 0;
+    padding: 0;
+    
 
-@media (min-width:800px) {
-    .header {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 10vh 5vh;
+.navbar-toggler{
+    
+        color: rgb(70, 64, 64);
+        background-color: rgb(171, 171, 189);
+        margin: 5px;
 
-        .titulo-seccion {
-            text-align: right;
-            margin-right: 20px;
-        }
-
-        .contenedor-nav {
-            grid-column: span 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
     }
-     }
+}
+ .bg-color{
+        background-color: rgba(61, 2, 2, 0.26);
+        padding: 0;
+        margin: 0;
+      }
+  
+   
+
+     

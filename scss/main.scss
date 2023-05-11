@@ -4,10 +4,6 @@ $color-primario: rgb(221, 216, 216);
 
 @import "./components/fuentes";
 
-@import "./components/header";
-
-@import "./components/_nav";
-
 @import "./components/footer";
 
 @import "./pages/fender";
@@ -25,6 +21,8 @@ $color-primario: rgb(221, 216, 216);
 @import "./components/separadores";
 
 @import "./components/videos";
+
+@import "./components/_header.scss";
 
 
 
