@@ -4,11 +4,13 @@
         display: grid;
         background-color:$color-primario ;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 0.5fr);
     }
 
     .img--mick {
-        margin-top: auto;
-        margin-bottom: auto;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
         background-color: $color-primario;
         animation-name: mover-caja-mick;
         animation-duration: 5s;
@@ -17,19 +19,15 @@
         animation-delay: 3s;
         animation-fill-mode: both;
     }
-    .img--yngwie {
-    display: flex;
-    height: 90%;
-    justify-content: center;
-}
+    
 }
 
 @media (min-width:1200px) {
 .contendor--articulo--ibanez {
     display: grid;
     background-color: $color-primario;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
 
     .parrafo--ibanez {
         grid-column: 1/4;

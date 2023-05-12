@@ -89,6 +89,11 @@ h2 {
   font-size: 1.2rem;
 }
 
+.span-footer {
+  color: black;
+  font-size: 0.7rem;
+}
+
 @media (min-width: 1200px) {
   .parrafo--video {
     background-color: rgb(187, 180, 180);
@@ -118,13 +123,13 @@ footer {
     grid-row: 1/2;
   }
   .contendor--articulo--fender .img--jimi {
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 100%;
+    width: 75%;
   }
   .contendor--articulo--fender .img--cobain {
-    display: flex;
     grid-column: 2/3;
     grid-row: 2/3;
     width: 100%;
@@ -138,13 +143,20 @@ footer {
     animation-delay: 3s;
     animation-fill-mode: both;
   }
+  .contendor--articulo--fender .img--yngwie {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/2;
+    grid-row: 2/2;
+    width: 75%;
+  }
 }
 @media (min-width: 1200px) {
   .contendor--articulo--fender {
     display: grid;
     background-color: rgb(221, 216, 216);
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 25vh;
+    grid-template-rows: repeat(2, 0.5fr);
   }
   .contendor--articulo--fender .parrafo--fender {
     display: flex;
@@ -155,13 +167,14 @@ footer {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .contendor--articulo--fender .img-jimi {
+  .contendor--articulo--fender .img--jimi {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
   .contendor--articulo--fender .img--yngwie {
     grid-column: 3/4;
-    grid-row: 3/4;
+    grid-row: 2/3;
+    margin-top: 10px;
   }
 }
 @media (min-width: 800px) {
@@ -170,6 +183,14 @@ footer {
     background-color: rgb(221, 216, 216);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(20vh 10vh);
+  }
+  .contendor--articulo--gibson .imagen--pappo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contendor--articulo--gibson .img--bbking {
+    margin-left: auto;
+    margin-right: auto;
   }
   .contendor--articulo--gibson .img--angus {
     grid-column: 2/3;
@@ -226,10 +247,12 @@ footer {
     display: grid;
     background-color: rgb(221, 216, 216);
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
   }
   .img--mick {
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(221, 216, 216);
     animation-name: mover-caja-mick;
     animation-duration: 5s;
@@ -238,18 +261,13 @@ footer {
     animation-delay: 3s;
     animation-fill-mode: both;
   }
-  .img--yngwie {
-    display: flex;
-    height: 90%;
-    justify-content: center;
-  }
 }
 @media (min-width: 1200px) {
   .contendor--articulo--ibanez {
     display: grid;
     background-color: rgb(221, 216, 216);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
   }
   .contendor--articulo--ibanez .parrafo--ibanez {
     grid-column: 1/4;
@@ -283,6 +301,12 @@ footer {
     translate: 0 0;
   }
 }
+.imagen--index {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 800px) {
   .contenedor--texto--index {
     display: grid;
@@ -320,7 +344,7 @@ form {
   display: block;
   background-color: rgb(211, 209, 207);
   margin: 15px auto 15px auto;
-  width: 400px;
+  width: 350px;
   padding: 1em;
   border: 2px solid #706258;
   border-radius: 1em;
@@ -344,7 +368,6 @@ form .formulario textarea {
 form .formulario .button {
   text-align: center;
   padding: 5px;
-  margin-left: 90px;
   margin-top: 10px;
   background-color: rgb(185, 171, 171);
   border-radius: 10px;
@@ -354,12 +377,33 @@ form .formulario .button:hover {
   background-color: rgb(44, 35, 35);
 }
 
+.centrado-input-label {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .w-50 {
   height: 50px;
 }
 
+.img--mick {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(221, 216, 216);
+}
+
+.imagen--index {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 .imagen {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-top: auto;
   max-width: 100%;
@@ -396,13 +440,11 @@ form .formulario .button:hover {
   .div--video {
     background-color: rgb(187, 180, 180);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 25vh 40vh;
+    grid-template-columns: repeat(2, 1fr);
   }
   .div--video .video {
     display: flex;
-    grid-column: 2/4;
-    grid-row: 2/3;
+    grid-column: 1/2;
     margin-top: 10px;
     max-width: 100%;
   }

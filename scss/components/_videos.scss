@@ -19,14 +19,13 @@
     .div--video {
         background-color: rgb(187, 180, 180);
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 25vh 40vh;
+        grid-template-columns: repeat(2, 1fr);
 
     
-        .video {
+        .video{
             display: flex;
-            grid-column: 2/4;
-            grid-row: 2/3;
+            grid-column: 1/2;
+           
             margin-top: 10px;
             max-width: 100%;
         }

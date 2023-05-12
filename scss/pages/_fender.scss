@@ -13,14 +13,15 @@
     }
 
     .img--jimi {
-        display: flex;
+       margin-left: auto;
+       margin-right: auto;
         grid-column: 1/2;
         grid-row: 1/2;
-        width: 100%;
+        width: 75%;
+        
     }
 
     .img--cobain {
-        display: flex;
         grid-column: 2/3;
         grid-row: 2/3;
         width: 100%;
@@ -35,7 +36,13 @@
         animation-fill-mode: both;
 
     }
-    
+    .img--yngwie{
+        margin-left: auto;
+        margin-right: auto;
+         grid-column: 1/2;
+         grid-row: 2/2;
+         width: 75%;
+    }
 
     }
      }
@@ -46,7 +53,7 @@
             display: grid;
             background-color: $color-primario;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 25vh;
+            grid-template-rows: repeat(2, 0.5fr);
     
             .parrafo--fender {
                 display: flex;
@@ -59,14 +66,15 @@
                 grid-row: 2/3;
             }
     
-            .img-jimi {
+            .img--jimi{
                 grid-column: 1/2;
-                grid-row: 3/4;
+                grid-row: 2/3;
             }
     
             .img--yngwie {
                 grid-column: 3/4;
-                grid-row: 3/4;
+                grid-row: 2/3;
+                margin-top: 10px;
             }
         }
  }    

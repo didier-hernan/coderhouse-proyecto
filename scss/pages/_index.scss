@@ -1,28 +1,32 @@
+.imagen--index {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
 
 @media (min-width:800px) {
-.contenedor--texto--index {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    .contenedor--texto--index {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
-    .parrafo {
-        display: flex;
-        grid-row: 1/span 1;
+        .parrafo {
+            display: flex;
+            grid-row: 1/span 1;
+        }
+
+        .imagen--index {
+            display: flex;
+            grid-column: 2/span 1;
+            grid-row: 1/span 1;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 100%;
+            background-color: $color-primario;
+        }
     }
-
-    .imagen--index {
-        display: flex;
-        grid-column: 2/span 1;
-        grid-row: 1/span 1;
-        margin-top: auto;
-        margin-bottom: auto;
-        width: 100%;
-        background-color: $color-primario;
-
-
-
-
-    }
-} 
 }
 
 @keyframes mover-caja {

@@ -6,6 +6,15 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(20vh 10vh);
 
+    .imagen--pappo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img--bbking{
+margin-left: auto;
+        margin-right: auto;
+    }
     .img--angus {
         grid-column: 2/3;
         grid-row: 1/2;
