@@ -41,7 +41,7 @@ margin-left: auto;
     display: grid;
     background-color: $color-primario;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
     text-align: center;
 
     .parrafo-gibson {

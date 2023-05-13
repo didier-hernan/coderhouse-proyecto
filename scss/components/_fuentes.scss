@@ -10,9 +10,6 @@ h1 {
     font-family: 'Acme', sans-serif;
 
 }
-
-
-
 h2 {
     padding: 5px;
     text-align: center;
@@ -21,6 +18,17 @@ h2 {
     background-color: rgba(233, 201, 95, 0.308);
 }
 
+a{
+    text-decoration: none;
+}
+.resaltado--de--palabra{
+    color: rgb(138, 4, 4);
+    font-style: none;
+    &:hover {
+        color: red;
+        border-color: red;
+         }
+}
 .parrafo {
     background-color: $color-primario;
     display: flex;
@@ -31,14 +39,10 @@ h2 {
     font-size: 1.2rem;
 
 }
-
 .span-footer{
     color: black;
     font-size: 0.7rem;
 }
-
-
-
     @media (min-width:1200px) {
         .parrafo--video {
             background-color: rgb(187, 180, 180);
