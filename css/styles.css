@@ -83,15 +83,6 @@ a {
   text-decoration: none;
 }
 
-.resaltado--de--palabra {
-  color: rgb(138, 4, 4);
-  font-style: none;
-}
-.resaltado--de--palabra:hover {
-  color: red;
-  border-color: red;
-}
-
 .parrafo {
   background-color: rgb(221, 216, 216);
   display: flex;
@@ -100,6 +91,10 @@ a {
   text-align: justify;
   padding: 10px;
   font-size: 1.2rem;
+}
+
+.remarcador {
+  color: rgb(177, 25, 25);
 }
 
 .span-footer {
